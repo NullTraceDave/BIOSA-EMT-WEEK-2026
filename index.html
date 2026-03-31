@@ -99,92 +99,95 @@
             <div class="h-1 w-20 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <script>
-                // 1. HELPER FUNCTION DEFINED FIRST
-                function viewNominees(title, list) {
-                    if (!list || list.length === 0) {
-                        alert("Category: " + title + "\n\nStatus: No nominees yet. Stay tuned!");
-                    } else {
-                        alert("Nominees for " + title + ":\n\n" + list.map(name => "• " + name).join("\n"));
-                    }
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="awards-container">
+            </div>
+
+        <script>
+            // 1. DATA LIST (ADD NAMES HERE)
+            const awardsData = [
+                { title: "Most attractive Student of the year", nominees: ["Agah David", "Joe"] },
+                { title: "Most endowed Student of the year", nominees: [] },
+                { title: "Most reliable Student of the year", nominees: [] },
+                { title: "Most social Student of the year", nominees: [] },
+                { title: "Most beautiful Student of the year", nominees: [] },
+                { title: "Most handsome Student of the year", nominees: [] },
+                { title: "Most unique Student of the year", nominees: [] },
+                { title: "Most entertaining Student of the year", nominees: [] },
+                { title: "Most enterprising Student of the year", nominees: [] },
+                { title: "Most Influential Student of the year", nominees: [] },
+                { title: "Most political Student of the year", nominees: [] },
+                { title: "Most innovative Student of the year", nominees: [] },
+                { title: "Most fashionable Student of the year", nominees: [] },
+                { title: "Most intellectual Student of the year", nominees: [] },
+                { title: "Most Talented Student of the year", nominees: [] },
+                { title: "Most creative student of the year", nominees: [] },
+                { title: "Most industrious student of the year", nominees: [] },
+                { title: "Most styled student of the year", nominees: [] },
+                { title: "Most inspiring student of the year", nominees: [] },
+                { title: "Most supportive student of the year", nominees: [] },
+                { title: "Best artist of the year", nominees: [] },
+                { title: "Best rapper of the year", nominees: [] },
+                { title: "Best dancer of the year", nominees: [] },
+                { title: "Best Mc of the year", nominees: [] },
+                { title: "Best Course Representative of the year", nominees: [] },
+                { title: "Best writer of the year", nominees: [] },
+                { title: "Best model of the year", nominees: [] },
+                { title: "Best Footballer of the year", nominees: [] },
+                { title: "Best Athlete of the year", nominees: [] },
+                { title: "Best comedian of the year", nominees: [] },
+                { title: "Best Skit Maker of the year", nominees: [] },
+                { title: "Best dressed Student of the year", nominees: [] },
+                { title: "Best graphics designer of the year", nominees: [] },
+                { title: "Best web designer of the year", nominees: [] },
+                { title: "Videographer of the year", nominees: [] },
+                { title: "Sports man of the year", nominees: [] },
+                { title: "Hype man of the year", nominees: [] },
+                { title: "Academic star of the year", nominees: [] },
+                { title: "Student leader of the year", nominees: [] },
+                { title: "Content creator of the year", nominees: [] },
+                { title: "Student activist of the year", nominees: [] },
+                { title: "Student politician of the year", nominees: [] },
+                { title: "Corrosive leader of the year", nominees: [] },
+                { title: "Traditional leader of the year", nominees: [] }
+            ];
+
+            // 2. HELPER FUNCTION
+            function viewNominees(index) {
+                const award = awardsData[index];
+                if (!award.nominees || award.nominees.length === 0) {
+                    alert("Category: " + award.title + "\n\nStatus: No nominees yet. Stay tuned!");
+                } else {
+                    alert("Nominees for " + award.title + ":\n\n" + award.nominees.map(name => "• " + name).join("\n"));
                 }
+            }
 
-                // 2. DATA LIST
-                const awardsData = [
-                    { title: "Most attractive Student of the year", nominees: ["Agah David", "Joe"] },
-                    { title: "Most endowed Student of the year", nominees: [] },
-                    { title: "Most reliable Student of the year", nominees: [] },
-                    { title: "Most social Student of the year", nominees: [] },
-                    { title: "Most beautiful Student of the year", nominees: [] },
-                    { title: "Most handsome Student of the year", nominees: [] },
-                    { title: "Most unique Student of the year", nominees: [] },
-                    { title: "Most entertaining Student of the year", nominees: [] },
-                    { title: "Most enterprising Student of the year", nominees: [] },
-                    { title: "Most Influential Student of the year", nominees: [] },
-                    { title: "Most political Student of the year", nominees: [] },
-                    { title: "Most innovative Student of the year", nominees: [] },
-                    { title: "Most fashionable Student of the year", nominees: [] },
-                    { title: "Most intellectual Student of the year", nominees: [] },
-                    { title: "Most Talented Student of the year", nominees: [] },
-                    { title: "Most creative student of the year", nominees: [] },
-                    { title: "Most industrious student of the year", nominees: [] },
-                    { title: "Most styled student of the year", nominees: [] },
-                    { title: "Most inspiring student of the year", nominees: [] },
-                    { title: "Most supportive student of the year", nominees: [] },
-                    { title: "Best artist of the year", nominees: [] },
-                    { title: "Best rapper of the year", nominees: [] },
-                    { title: "Best dancer of the year", nominees: [] },
-                    { title: "Best Mc of the year", nominees: [] },
-                    { title: "Best Course Representantive of the year", nominees: [] },
-                    { title: "Best writer of the year", nominees: [] },
-                    { title: "Best model of the year", nominees: [] },
-                    { title: "Best Footballer of the year", nominees: [] },
-                    { title: "Best Athlete of the year", nominees: [] },
-                    { title: "Best comedian of the year", nominees: [] },
-                    { title: "Best Skit Maker of the year", nominees: [] },
-                    { title: "Best dressed Student of the year", nominees: [] },
-                    { title: "Best graphics designer of the year", nominees: [] },
-                    { title: "Best web designer of the year", nominees: [] },
-                    { title: "Videographer of the year", nominees: [] },
-                    { title: "Sports man of the year", nominees: [] },
-                    { title: "Hype man of the year", nominees: [] },
-                    { title: "Academic star of the year", nominees: [] },
-                    { title: "Student leader of the year", nominees: [] },
-                    { title: "Content creator of the year", nominees: [] },
-                    { title: "Student activist of the year", nominees: [] },
-                    { title: "Student politian of the year", nominees: [] },
-                    { title: "Corrosive leader of the year", nominees: [] },
-                    { title: "Traditional leader of the year", nominees: [] }
-                ];
-
-                // 3. GENERATE CARDS
-                awardsData.forEach(award => {
-                    document.write(`
-                        <div class="bg-white p-6 rounded-3xl shadow-lg border-b-4 border-green-700 text-center hover:-translate-y-2 transition-transform">
-                            <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-trophy text-xl"></i>
-                            </div>
-                            <h4 class="font-bold text-slate-800 uppercase text-sm">${award.title}</h4>
-                            <div class="flex gap-2 mt-4">
-                                <button onclick="viewNominees('${award.title}', ${JSON.stringify(award.nominees)})" class="flex-1 text-[10px] font-bold text-green-700 border border-green-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white transition-colors uppercase">
-                                    View Nominee
+            // 3. RENDER FUNCTION
+            const container = document.getElementById('awards-container');
+            awardsData.forEach((award, index) => {
+                container.innerHTML += `
+                    <div class="bg-white p-6 rounded-3xl shadow-lg border-b-4 border-green-700 text-center hover:-translate-y-2 transition-transform">
+                        <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-trophy text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-800 uppercase text-sm">${award.title}</h4>
+                        <div class="flex gap-2 mt-4">
+                            <button onclick="viewNominees(${index})" class="flex-1 text-[10px] font-bold text-green-700 border border-green-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white transition-colors uppercase">
+                                View Nominee
+                            </button>
+                            <div class="relative group flex-1">
+                                <button class="w-full text-[10px] font-bold text-white bg-slate-900 px-4 py-2 rounded-full uppercase">
+                                    Pick Award
                                 </button>
-                                <div class="relative group flex-1">
-                                    <button class="w-full text-[10px] font-bold text-white bg-slate-900 px-4 py-2 rounded-full uppercase">
-                                        Pick Award
-                                    </button>
-                                    <div class="absolute bottom-full mb-2 left-0 right-0 hidden group-hover:block bg-slate-900 text-white text-[9px] rounded-lg p-2 z-50">
-                                        <a href="https://wa.me/2349126482199?text=I%20want%20to%20pick:%20${award.title}" class="block mb-1 border-b border-slate-700 pb-1">Kenny (BIO)</a>
-                                        <a href="https://wa.me/2348103331713?text=I%20want%20to%20pick:%20${award.title}" class="block">Becky (EMT)</a>
-                                    </div>
+                                <div class="absolute bottom-full mb-2 left-0 right-0 hidden group-hover:block bg-slate-900 text-white text-[9px] rounded-lg p-2 z-50">
+                                    <a href="https://wa.me/2349126482199?text=I%20want%20to%20pick:%20${award.title}" class="block mb-1 border-b border-slate-700 pb-1">Kenny (BIO)</a>
+                                    <a href="https://wa.me/2348103331713?text=I%20want%20to%20pick:%20${award.title}" class="block">Becky (EMT)</a>
                                 </div>
                             </div>
                         </div>
-                    `);
-                });
-            </script>
-        </div>
+                    </div>
+                `;
+            });
+        </script>
 
         <div class="mt-8 bg-slate-900 rounded-3xl p-6 text-center border-2 border-yellow-500 shadow-xl">
             <p class="text-yellow-400 text-xs font-bold uppercase tracking-[0.2em] mb-2">Honorable Mention</p>
@@ -313,5 +316,4 @@
     }, 1000);
 </script>
 </body>
-                                                                                                               </html>
-      
+</html>
