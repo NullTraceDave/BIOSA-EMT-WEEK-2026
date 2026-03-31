@@ -3,125 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIOSA/EMT WEEK 2026</title>
+    <title>BIOSA/EMT WEEK 2026 | FUO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://js.paystack.co/v2/inline.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .biosa-green { color: #1a472a; }
-        .bg-biosa-green { background-color: #1a472a; }
-        .hero-gradient { background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%); }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .fuo-gradient { background: linear-gradient(135deg, #064e3b 0%, #065f46 100%); }
+        .text-gold { color: #fbbf24; }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-slate-50 text-slate-900">
 
-    <header class="hero-gradient text-white py-16 px-6 text-center shadow-2xl">
-        <div class="flex justify-center mb-4 gap-4">
-             <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-green-800 font-bold">BIOSA</div>
-             <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-green-800 font-bold">EMT</div>
+<div class="bg-white py-4 text-center border-b-2 border-slate-100">
+    <h1 class="text-xl font-black tracking-tight uppercase text-slate-900 px-4">
+        Federal University Otuoke, Bayelsa State
+    </h1>
+</div>
+
+<div class="bg-green-900 py-6 text-center border-b-4 border-yellow-500 shadow-md">
+    <h1 class="text-white font-black uppercase px-6 leading-tight tracking-wider" style="font-size: 20px;">
+        Department of Biology <br class="md:hidden"> 
+        <span class="text-yellow-400">&</span> 
+        Environmental Management/Toxicology
+    </h1>
+</div>
+    
+
+    <header class="fuo-gradient text-white pt-12 pb-24 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <i class="fas fa-microscope text-[15rem] absolute -bottom-10 -left-10 rotate-12"></i>
+            <i class="fas fa-leaf text-[15rem] absolute -top-10 -right-10 -rotate-12"></i>
         </div>
-        <h1 class="text-4xl md:text-6xl font-black mb-2 tracking-tight uppercase">BIOSA/EMT WEEK</h1>
-        <p class="text-lg italic opacity-90">"Where Science Meets Vibes"</p>
         
-        <div id="countdown" class="flex justify-center gap-3 mt-8">
-            <div class="bg-black/30 p-3 rounded-lg min-w-[70px]">
-                <span id="days" class="block text-2xl font-bold">00</span>
-                <span class="text-[10px] uppercase">Days</span>
-            </div>
-            <div class="bg-black/30 p-3 rounded-lg min-w-[70px]">
-                <span id="hours" class="block text-2xl font-bold">00</span>
-                <span class="text-[10px] uppercase">Hrs</span>
-            </div>
-            <div class="bg-black/30 p-3 rounded-lg min-w-[70px]">
-                <span id="mins" class="block text-2xl font-bold">00</span>
-                <span class="text-[10px] uppercase">Min</span>
-            </div>
+        <div class="relative z-10">
+            <h2 class="text-sm font-bold text-gold tracking-widest uppercase mb-3">The Godspower-Led Administration Presents</h2>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-none uppercase">BIOSA <span class="text-gold">X</span> EMT WEEK</h1>
+            <p class="text-lg opacity-80 max-w-xl mx-auto italic font-light">"Where Science Meets Vibes"</p>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 -mt-8">
+    <main class="max-w-4xl mx-auto px-4 -mt-16 relative z-20">
         
-        <section class="bg-white rounded-2xl shadow-xl p-6 md:p-10 mb-12 border-t-8 border-green-700">
-            <div class="flex flex-col md:flex-row gap-10 items-center">
-                <div class="md:w-3/5">
-                    <h2 class="text-2xl font-bold mb-4 biosa-green">Get Your Event Ticket</h2>
-                    <p class="text-gray-600 mb-6 text-sm">One ticket grants you access to all major events, including the <b>Rave & Award Night</b> on May 1st.</p>
-                    
-                    <div class="bg-green-50 p-4 rounded-lg mb-6 border border-green-100">
-                        <span class="text-gray-500 text-xs uppercase block">Ticket Price</span>
-                        <span class="text-3xl font-black biosa-green">₦2,000</span>
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden mb-10 border border-white">
+            <div class="md:flex">
+                <div class="md:w-1/2 p-2">
+                    <img src="IMG-20260322-WA0330.jpg" alt="Official Flyer" class="w-full h-full object-cover rounded-2xl shadow-inner">
+                </div>
+                <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                    <div class="mb-6">
+                        <span class="bg-green-100 text-green-800 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Ticket Portal</span>
+                        <h3 class="text-2xl font-bold mt-2 text-slate-800 uppercase italic">Rave & Award Night</h3>
+                        <p class="text-slate-500 text-sm mt-1">May 1st | 5:00 PM - 10:00 PM</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-3xl font-black text-slate-900">₦2,000</div>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Per Access Pass</p>
                     </div>
 
                     <div class="space-y-4">
-                        <input type="email" id="email-address" placeholder="Enter your Student Email" 
-                               class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-600 outline-none transition-all">
+                        <input type="email" id="email-address" placeholder="Student Email Address" 
+                               class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-green-500 outline-none transition-all">
                         
-                        <button type="button" onclick="payWithPaystack()" 
-                                class="w-full bg-biosa-green text-white font-bold py-4 rounded-xl hover:bg-green-900 transition-all shadow-lg active:scale-95">
-                            SECURE TICKET NOW
+                        <button onclick="payWithPaystack()" 
+                                class="w-full bg-slate-900 text-white font-bold py-4 rounded-2xl hover:bg-black shadow-xl active:scale-95 transition-all uppercase tracking-widest text-sm">
+                            Purchase Ticket
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="md:w-2/5 flex flex-col items-center bg-gray-50 p-6 rounded-2xl border-2 border-dashed border-gray-200">
-                    <div id="qrcode" class="flex items-center justify-center bg-white p-2 rounded-lg shadow-inner mb-4 min-h-[128px] min-w-[128px]">
-                         <p class="text-[10px] text-gray-400 text-center">QR Code will generate <br> after successful payment</p>
+        <div id="ticket-display" class="hidden animate-bounce mb-10 bg-green-600 text-white p-6 rounded-3xl text-center">
+            <p class="font-bold mb-4">Payment Successful! Take a Screenshot:</p>
+            <div id="qrcode" class="bg-white p-4 inline-block rounded-xl"></div>
+        </div>
+
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-black text-slate-800 uppercase tracking-tighter">BIOSA/EMT Excellence Awards</h3>
+                <p class="text-sm text-slate-500 italic mt-2">Recognizing the giants of the Godspower-Led Administration</p>
+                <div class="h-1 w-20 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-3xl shadow-lg border-b-4 border-green-700 text-center hover:-translate-y-2 transition-transform">
+                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-xl"></i>
                     </div>
-                    <p class="text-[11px] font-bold text-gray-400 uppercase tracking-widest">Digital Entry Pass</p>
+                    <h4 class="font-bold text-slate-800 uppercase text-sm">Most Sophisticated</h4>
+                    <p class="text-[10px] text-slate-400 mt-2 uppercase tracking-widest">Male & Female</p>
+                    <button class="mt-4 text-[10px] font-bold text-green-700 border border-green-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white transition-colors">
+                        VIEW NOMINEES
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl shadow-lg border-b-4 border-green-700 text-center hover:-translate-y-2 transition-transform">
+                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-crown text-xl"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 uppercase text-sm">Student of the Year</h4>
+                    <p class="text-[10px] text-slate-400 mt-2 uppercase tracking-widest">Academic & Social</p>
+                    <button class="mt-4 text-[10px] font-bold text-green-700 border border-green-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white transition-colors">
+                        VIEW NOMINEES
+                    </button>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl shadow-lg border-b-4 border-green-700 text-center hover:-translate-y-2 transition-transform">
+                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-xl"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 uppercase text-sm">Most Influential</h4>
+                    <p class="text-[10px] text-slate-400 mt-2 uppercase tracking-widest">BIOSA / EMT</p>
+                    <button class="mt-4 text-[10px] font-bold text-green-700 border border-green-700 px-4 py-2 rounded-full hover:bg-green-700 hover:text-white transition-colors">
+                        VIEW NOMINEES
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-slate-900 rounded-3xl p-6 text-center border-2 border-yellow-500 shadow-xl">
+                <p class="text-yellow-400 text-xs font-bold uppercase tracking-[0.2em] mb-2">Honorable Mention</p>
+                <h4 class="text-white font-bold text-lg">The Executive Excellence Award</h4>
+                <p class="text-slate-400 text-[11px] mt-1 italic">Reserved for the most dedicated student leaders of the 2025/2026 session.</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="glass p-6 rounded-3xl border border-white shadow-sm">
+                <h4 class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Social Directors</h4>
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-700">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500">Biology Students Association</p>
+                        <p class="font-bold text-sm">Kenigbolo Raphael</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-700">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500">EMT Association</p>
+                        <p class="font-bold text-sm italic">Becky</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl flex flex-col justify-center text-center">
+                <p class="text-[10px] font-bold text-gold uppercase tracking-widest mb-4">Countdown to Day 1</p>
+                <div class="flex justify-around">
+                    <div>
+                        <span id="days" class="text-3xl font-black block">00</span>
+                        <span class="text-[8px] uppercase opacity-50">Days</span>
+                    </div>
+                    <div>
+                        <span id="hours" class="text-3xl font-black block">00</span>
+                        <span class="text-[8px] uppercase opacity-50">Hours</span>
+                    </div>
+                    <div>
+                        <span id="mins" class="text-3xl font-black block">00</span>
+                        <span class="text-[8px] uppercase opacity-50">Mins</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="mb-12">
-            <h3 class="text-center font-bold text-xl mb-6 uppercase tracking-widest text-gray-500">Event Schedule</h3>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-600">
-                    <p class="text-[10px] font-bold text-green-600 uppercase">Mon 27</p>
-                    <p class="text-xs font-bold leading-tight mt-1">Clean Up & Treasure Hunt</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-600">
-                    <p class="text-[10px] font-bold text-green-600 uppercase">Tue 28</p>
-                    <p class="text-xs font-bold leading-tight mt-1">Cooking Competition</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-600">
-                    <p class="text-[10px] font-bold text-green-600 uppercase">Wed 29</p>
-                    <p class="text-xs font-bold leading-tight mt-1">Picnic Day</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-600">
-                    <p class="text-[10px] font-bold text-green-600 uppercase">Thu 30</p>
-                    <p class="text-xs font-bold leading-tight mt-1">Football Match (M/F)</p>
-                </div>
-                <div class="bg-black text-white p-4 rounded-xl shadow-sm">
-                    <p class="text-[10px] font-bold text-yellow-400 uppercase">Fri 01</p>
-                    <p class="text-xs font-bold leading-tight mt-1">Rave & Award Night</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gray-100 rounded-2xl p-8 mb-12">
-            <h3 class="text-xl font-bold mb-4 text-center">Inquiries?</h3>
-            <form action="https://formspree.io/f/YOUR_ID" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input type="text" name="name" placeholder="Full Name" class="p-3 rounded-lg border outline-none">
-                <input type="text" name="phone" placeholder="Phone Number" class="p-3 rounded-lg border outline-none">
-                <textarea name="message" placeholder="How can we help?" class="p-3 rounded-lg border outline-none md:col-span-2"></textarea>
-                <button type="submit" class="bg-gray-800 text-white py-3 rounded-lg md:col-span-2 hover:bg-black transition-colors">Send Message</button>
+        <section class="mb-20 text-center">
+            <h3 class="text-xl font-bold mb-6 uppercase text-slate-800">Sponsorship & Enquiries</h3>
+            <form action="https://formspree.io/f/YOUR_ID" method="POST" class="max-w-md mx-auto space-y-3">
+                <input type="text" name="name" placeholder="Full Name" class="w-full p-4 border rounded-2xl outline-none focus:border-green-500">
+                <textarea name="message" placeholder="Message" rows="3" class="w-full p-4 border rounded-2xl outline-none focus:border-green-500"></textarea>
+                <button type="submit" class="bg-slate-200 text-slate-800 px-8 py-3 rounded-full font-bold hover:bg-slate-300 transition-colors">Send to Committee</button>
             </form>
         </section>
-
     </main>
 
-    <footer class="bg-white border-t py-10 text-center">
-        <p class="text-sm text-gray-500 mb-2">© 2026 BIOSA & EMT Associations</p>
-        <p class="text-xs text-gray-400 uppercase tracking-widest">Excellence in Service</p>
+    <footer class="py-12 bg-white border-t border-slate-100 text-center">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">A Godspower-Led Administration Production</p>
+        <p class="text-[10px] text-slate-300 mt-2">© 2026 FUO BIOSA/EMT. Excellence & Service.</p>
     </footer>
 
     <script>
-        // 1. Paystack Connection
         function payWithPaystack() {
             const email = document.getElementById("email-address").value;
-            const publicKey = 'pk_test_169843f6d80e0724801e056a6b82124babc864a5'; // Use the key you provided
-
             if (!email || !email.includes('@')) {
                 alert("Please enter a valid student email address.");
                 return;
@@ -129,34 +199,27 @@
 
             const paystack = new PaystackPop();
             paystack.newTransaction({
-                key: publicKey,
+                key: 'pk_test_169843f6d80e0724801e056a6b82124babc864a5', 
                 email: email,
-                amount: 2000 * 100, // 2000 Naira
+                amount: 2000 * 100,
                 onSuccess: (transaction) => {
-                    alert('Payment Successful! Reference: ' + transaction.reference);
+                    document.getElementById('ticket-display').classList.remove('hidden');
                     generateTicket(transaction.reference);
                 },
-                onCancel: () => {
-                    alert('Transaction cancelled. No funds were debited.');
-                }
+                onCancel: () => { alert('Transaction exited.'); }
             });
         }
 
-        // 2. QR Code Generation
         function generateTicket(ref) {
             document.getElementById("qrcode").innerHTML = "";
             new QRCode(document.getElementById("qrcode"), {
-                text: "BIOSA-EMT-2026-" + ref,
-                width: 128,
-                height: 128,
-                colorDark: "#1a472a",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H
+                text: "FUO-BIOSA-EMT-" + ref,
+                width: 150,
+                height: 150,
+                colorDark: "#064e3b"
             });
-            alert("Your QR Ticket is ready! Take a screenshot for entry.");
         }
 
-        // 3. Simple Countdown
         const target = new Date("April 27, 2026 08:00:00").getTime();
         setInterval(() => {
             const now = new Date().getTime();
@@ -168,4 +231,4 @@
     </script>
 </body>
     </html>
-                        
+    
