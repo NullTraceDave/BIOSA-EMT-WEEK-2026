@@ -105,7 +105,7 @@
     <section class="mb-16">
         <div class="text-center mb-10">
             <h3 class="text-3xl font-black text-slate-800 uppercase tracking-tighter">The Royal Battle</h3>
-            <p class="text-sm text-slate-500 italic mt-2">₦100 Per Vote | Support your favorite candidate</p>
+            <p class="text-sm text-slate-500 italic mt-2">₦200 Per Vote | Support your favorite candidate</p>
             <div class="h-1.5 w-24 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -295,7 +295,7 @@ Excellence & Servicee
         FlutterwaveCheckout({
             public_key: "FLWPUBK-a1a6e1b40927e8f0996d6e71fce1f576-X", 
             tx_ref: "VOTE-" + Date.now(),
-            amount: qty * 100,
+            amount: qty * 200,
             currency: "NGN",
             customer: { email: email },
             callback: function (data) {
@@ -320,7 +320,7 @@ Excellence & Servicee
         }
     }
 
-    const target = new Date("May 1, 2026 17:00:00").getTime();
+    const target = new Date("April 30, 2026 17:00:00").getTime();
     setInterval(() => {
         const now = new Date().getTime();
         const d = target - now;
